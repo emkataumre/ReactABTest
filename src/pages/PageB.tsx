@@ -4,7 +4,7 @@ import planet from "../assets/images/planet.png";
 export const PageB: FC = () => {
   return (
     <>
-      <header className="flex justify-end bg-transparent px-2.5 py-5 bg-slate-100 w-full">
+      <header className="flex justify-end bg-transparent px-2.5 py-5 bg-slate-200 w-full">
         <button className="bg-primary-blue text-white px-2 py-1 font-sans font-bold">
           Create an account
         </button>
