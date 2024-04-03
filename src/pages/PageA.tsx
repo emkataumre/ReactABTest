@@ -19,10 +19,20 @@ export const PageA: FC = () => {
               Venture beyond Earth and reach for the stars.
             </p>
             <div className="flex flex-row gap-8 ml-auto mr-auto">
-              <button className="bg-primary-orange text-white py-2 px-2.5 font-sans font-bold">
+              <button
+                className="bg-primary-orange text-white py-2 px-2.5 font-sans font-bold"
+                onClick={() => {
+                  console.log("Clicked");
+                }}
+              >
                 Begin your journey
               </button>
-              <button className="text-black py-2 px-2.5 font-sans font-medium border-b-4 border-primary-orange">
+              <button
+                className="text-black py-2 px-2.5 font-sans font-medium border-b-4 border-primary-orange"
+                onClick={() => {
+                  console.log("Clicked");
+                }}
+              >
                 Create an account
               </button>
             </div>

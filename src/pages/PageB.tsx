@@ -5,7 +5,12 @@ export const PageB: FC = () => {
   return (
     <>
       <header className="flex justify-end bg-transparent px-2.5 py-5 bg-slate-200 w-full">
-        <button className="bg-primary-blue text-white px-2 py-1 font-sans font-bold">
+        <button
+          onClick={() => {
+            console.log("Clicked");
+          }}
+          className="bg-primary-blue text-white px-2 py-1 font-sans font-bold"
+        >
           Create an account
         </button>
       </header>
@@ -23,7 +28,12 @@ export const PageB: FC = () => {
             <p className="text-center mb-auto text-lg font-serif">
               Venture beyond Earth and reach for the stars.
             </p>
-            <button className="bg-primary-blue ml-auto mr-auto text-white py-2 px-2.5 font-sans font-bold">
+            <button
+              onClick={() => {
+                console.log("Clicked");
+              }}
+              className="bg-primary-blue ml-auto mr-auto text-white py-2 px-2.5 font-sans font-bold"
+            >
               Take the first step
             </button>
           </section>
