@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC, useEffect } from "react";
+import { useABTestingStore } from "./stores/ABTestingStore";
+import { Layout } from "./components/Layout";
+import { PageA } from "./pages/PageA";
+import { PageB } from "./pages/PageB";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: FC = () => {
+  const ABVersion = useABTestingStore((state) => state.version);
+  const setABVersion = useABTestingStore((state) => state.setVersion);
+
+  useEffect(() => {
+    if (ABVersion === null) {
+      const version = Math.random() < 0.5 ? "a" : "b";
+      setABVersion(version);
+    }
+  }, []);
+  return <Layout>{ABVersion === "a" ? <PageA /> : <PageB />}</Layout>;
+};
 
 export default App;
