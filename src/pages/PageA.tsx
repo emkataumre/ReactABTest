@@ -31,7 +31,7 @@ export const PageA: FC = () => {
               <button
                 className="bg-primary-orange text-white py-2 px-2.5 font-sans font-bold"
                 onClick={() => {
-                  console.log("Clicked");
+                  console.log("Clicked 1");
                 }}
               >
                 Begin your journey
@@ -39,7 +39,7 @@ export const PageA: FC = () => {
               <button
                 className="text-black py-2 px-2.5 font-sans font-medium border-b-4 border-primary-orange"
                 onClick={() => {
-                  console.log("Clicked");
+                  console.log("Clicked 2");
                 }}
               >
                 Create an account

@@ -12,7 +12,7 @@ export const PageB: FC = () => {
       <header className="flex justify-end bg-transparent px-2.5 py-5 bg-slate-200 w-full">
         <button
           onClick={() => {
-            console.log("Clicked");
+            console.log("Clicked 2");
           }}
           className="bg-primary-blue text-white px-2 py-1 font-sans font-bold"
         >
@@ -35,7 +35,7 @@ export const PageB: FC = () => {
             </p>
             <button
               onClick={() => {
-                console.log("Clicked");
+                console.log("Clicked 1");
               }}
               className="bg-primary-blue ml-auto mr-auto text-white py-2 px-2.5 font-sans font-bold"
             >
