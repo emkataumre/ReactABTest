@@ -29,7 +29,7 @@ export const PageA: FC = () => {
           </section>
         </section>
         <footer className="px-2.5 py-5 relative z-40 bg-secondary-orange flex justify-center">
-          <p className="">©2024webObserve</p>
+          <p className="text-white">©2024webObserve</p>
         </footer>
       </div>
     </>
