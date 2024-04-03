@@ -1,7 +1,12 @@
-import { FC } from "react";
-import planet from "../assets/images/planet.png";
+import ReactGA from "react-ga";
+import planet from "../assets/images/planetb.png";
+import { FC, useEffect } from "react";
 
 export const PageB: FC = () => {
+  useEffect(() => {
+    ReactGA.pageview("/PageA");
+  }, []);
+
   return (
     <>
       <header className="flex justify-end bg-transparent px-2.5 py-5 bg-slate-200 w-full">

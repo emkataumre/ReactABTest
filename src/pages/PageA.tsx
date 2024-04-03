@@ -1,7 +1,16 @@
-import { FC } from "react";
+import React, { FC, useEffect } from "react";
+import ReactGA from "react-ga";
 import planet from "../assets/images/planetb.png";
 
 export const PageA: FC = () => {
+  const PageA = () => {
+    useEffect(() => {
+      ReactGA.pageview("/PageA");
+    }, []);
+
+    // ...
+  };
+
   return (
     <>
       <div className="overflow-y-hidden">
@@ -45,3 +54,4 @@ export const PageA: FC = () => {
     </>
   );
 };
+export default PageA;
